@@ -10,17 +10,21 @@
       margin: 0;
       color: #222;
 
-      /* Collage background using Image1-5.jpg */
-      background:
+      /* GRID COLLAGE BACKGROUND (Option 2) */
+      background-image:
         url('Image1.jpg'),
         url('Image2.jpg'),
         url('Image3.jpg'),
         url('Image4.jpg'),
         url('Image5.jpg');
-      background-size: cover;
-      background-position: center;
-      background-blend-mode: overlay;
-      background-color: rgba(0, 0, 0, 0.45);
+      background-size: 33% 50%;
+      background-repeat: no-repeat;
+      background-position:
+        top left,
+        top center,
+        top right,
+        bottom left,
+        bottom right;
     }
 
     header {
@@ -54,7 +58,7 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.85); /* Slightly transparent for readability */
+      background: rgba(255, 255, 255, 0.85);
       border-radius: 8px;
       padding: 20px;
       margin-bottom: 20px;
@@ -95,7 +99,6 @@
 </head>
 <body>
   <header>
-    <!-- Correct file name: Logo.jpeg -->
     <img src="Logo.jpeg" alt="Shree Kutch Leva Patel Cricket Club - Western Australia Logo" />
     <h1>Shree Kutch Leva Patel Cricket Club</h1>
     <p>Western Australia • Player Registration</p>
