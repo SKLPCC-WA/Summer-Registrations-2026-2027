@@ -9,24 +9,26 @@
       font-family: Arial, sans-serif;
       margin: 0;
       color: #222;
+    }
 
-      /* 6‑image grid collage */
-      background-image:
-        url('Image1.jpg'),
-        url('Image2.jpg'),
-        url('Image3.jpg'),
-        url('Image4.jpg'),
-        url('Image5.jpg'),
-        url('Image6.jpg');
-      background-size: 33.33% 50%;
-      background-repeat: no-repeat;
-      background-position:
-        top left,
-        top center,
-        top right,
-        bottom left,
-        bottom center,
-        bottom right;
+    /* TRUE NON‑STRETCHING COLLAGE */
+    .collage {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 0;
+      z-index: -1;
+    }
+
+    .collage img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     header {
@@ -100,6 +102,17 @@
   </style>
 </head>
 <body>
+
+  <!-- NON‑STRETCHING COLLAGE -->
+  <div class="collage">
+    <img src="Image1.jpg" />
+    <img src="Image2.jpg" />
+    <img src="Image3.jpg" />
+    <img src="Image4.jpg" />
+    <img src="Image5.jpg" />
+    <img src="Image6.jpg" />
+  </div>
+
   <header>
     <img src="Logo.jpeg" alt="Shree Kutch Leva Patel Cricket Club - Western Australia Logo" />
     <h1>Shree Kutch Leva Patel Cricket Club</h1>
