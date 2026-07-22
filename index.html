@@ -8,12 +8,23 @@
     body {
       font-family: Arial, sans-serif;
       margin: 0;
-      background: #f5f5f5;
       color: #222;
+
+      /* Collage background using Image1-5.jpg */
+      background:
+        url('Image1.jpg'),
+        url('Image2.jpg'),
+        url('Image3.jpg'),
+        url('Image4.jpg'),
+        url('Image5.jpg');
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
+      background-color: rgba(0, 0, 0, 0.45);
     }
 
     header {
-      background: #004b8d;
+      background: rgba(0, 75, 141, 0.9);
       color: #fff;
       padding: 20px;
       text-align: center;
@@ -43,7 +54,7 @@
     }
 
     .card {
-      background: #fff;
+      background: rgba(255, 255, 255, 0.85); /* Slightly transparent for readability */
       border-radius: 8px;
       padding: 20px;
       margin-bottom: 20px;
@@ -78,7 +89,7 @@
       text-align: center;
       padding: 15px 0 25px;
       font-size: 0.9rem;
-      color: #555;
+      color: #fff;
     }
   </style>
 </head>
